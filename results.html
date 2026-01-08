@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Results Page</title>
+    	<!-- 
+         Name: Jordan Pangrazzi
+      	 Date: 12/18/25
+      	 Description: Displays the results of what was submitted into the request form
+      	-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+      <header>
+         <h1><a href="index.html"><img src="images/banner.jpg" width="600" height="300" alt="War Room League"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="standings.html">Standings</a></li>
+            <li><a href="Submissions.html">Submissions</a></li>
+         </ul>
+      </nav>
+      <article id="contentstart">
+         <div class="container">
+            <h2>Your request has been submitted</h2>
+            <div class="results">
+               <h3>You entered the following data:</h3>
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+            </div>
+         </div>
+      </article>
+      <footer>
+        <p>Jordan Pangrazzi &bull; Portfolio Website &bull; HTML &amp; CSS &bull; Winter 2025</p>
+      </footer>
+   </body>
+</html>

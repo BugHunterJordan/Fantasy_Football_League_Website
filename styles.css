@@ -1,0 +1,401 @@
+/* 
+   Name: Jordan Pangrazzi
+      	 Date: 12/18/25
+      	 Description: Style sheet
+*/
+
+/* Reset Styles */
+html {
+   font-size: 16px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, ul, table, th, td {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+ol, ul {
+   list-style-type: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+
+
+/* Styles */
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   background: url("images/background.jpg");
+   background-size: cover;
+}
+a:link {
+   color: black;
+}
+a:visited {
+   color: #888;
+}
+
+
+
+/* Skip Nav */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: ivory;
+   background-color: #34180f;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+}
+
+
+
+/* Headers */
+h2 {
+   padding: 0.4em;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-size: 2em;
+   font-weight: 700;
+}
+h1 {
+   margin: 1.4em 0 0.5em;
+   font-size: 1.6em;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   color: black;
+}
+h3 {
+	text-align: center;
+}
+
+
+
+
+
+/* site Navigation bar */
+nav.sitenavigation {
+   color: #34180f;
+   text-align: center;
+   background-color: #B8944D;
+}
+nav.sitenavigation li {
+   margin: 0.3em 0.5em;
+   display: inline-block;
+   font-size: 1.3em;
+}
+nav.sitenavigation a:link,
+nav.sitenavigation a:visited {
+   text-decoration: none;
+   color: #34180f;
+}
+nav.sitenavigation a:visited {
+   color: #744f42;
+}
+nav.sitenavigation a:hover,
+nav.sitenavigation a:focus {
+   color: ivory;
+}
+nav.sitenavigation a {
+   padding: 0.3em 0.6em;
+   border-radius: 6px;
+   transition: background-color 0.3s ease;
+}
+
+nav.sitenavigation a:hover,
+nav.sitenavigation a:focus {
+   background-color: #34180f;
+   color: ivory;
+}
+
+
+
+
+/* Article */
+article {
+   margin: 0 auto;
+   padding: 1.4em;
+   background-color: #f9f3e7;
+   width: 62%;
+   float: left;
+   border-right: double;
+}
+
+article h1 {
+   margin: 1.4em 0 0.5em;
+   font-size: 1.6em;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   color: black;
+}
+article h2 {
+   margin-bottom: 0.4em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 900;
+   font-size: 3em;
+   text-align: center;
+   padding: 0.4em;
+}
+article h3 {
+   margin-bottom: 0.4em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-size: 2em;
+}
+article p {
+   margin: 0 0 0.8em 1em;
+   line-height: 1.6;
+   font-size: 1.05em;
+}
+article h1, article h2 {
+   letter-spacing: 0.03em;
+}
+article.standings p {
+   text-align: center;
+}
+
+
+/* containers */
+.container{
+   min-width: 600px;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 3% 1em;
+   background-color: ivory;
+   overflow: auto;
+   text-align: center;
+}
+.containersub {
+   text-align: left;
+}
+article div.container {
+   padding: 2%;
+   background-color: white;
+}
+
+.team-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.team-row img {
+width: 150px; 
+height: auto;
+}
+.team-row {
+   background-color: #fff;
+   padding: 1em;
+   border-radius: 8px;
+   margin-bottom: 1.5em;
+}
+
+.team-info {
+   width: 70%;
+}
+
+.team-row img {
+   border-radius: 50%;
+   border: 3px solid #B8944D;
+}
+
+
+
+
+/* Table */
+table {
+   border: 3px solid black;
+   border-spacing: 0;
+   margin: auto;
+}
+th, td {
+   border: 1px solid black;
+   padding: 0.2em 0.6em;
+}
+th {
+   background-color: rgb(253,245,230);
+   text-align: center;
+   font-weight: bold;
+}
+
+
+
+/* Aside */
+aside {
+   color: brown;
+   width: 27%;
+   padding: 2%;
+   float: right;
+   background: url("images/aside.jpg");
+}
+
+
+aside p {
+   padding: 0.4em;
+   margin-bottom: 0.6em;
+   font-size: 1.6em;
+   line-height: 1.4;
+}
+aside ul {
+   margin-left: 2em;
+}
+
+ul.custom-markers {
+list-style: none;
+padding-left: 0;
+}
+
+ul.custom-markers li {
+background-image: url("images/football.jpg");
+background-size: 20px 20px; 
+background-repeat: no-repeat;
+background-position: 0 5px; 
+padding-left: 30px; 
+}
+
+ol.custom-markers {
+list-style: none;
+padding-left: 0;
+}
+
+ol.custom-markers li {
+background-image: url("images/football.jpg");
+background-size: 20px 20px; 
+background-repeat: no-repeat;
+background-position: 0 5px; 
+padding-left: 30px; 
+}
+
+
+/* Form */
+form {
+   padding: 10px;
+}
+fieldset {
+   margin-bottom: 0.8em;
+   border-radius: 8px;
+}
+
+/* Nested form*/
+fieldset fieldset {
+   margin-top: 1em;
+   padding: 0.8em;
+   border: 1px solid #777;
+}
+legend {
+   font-size: 1.25em;
+}
+label {
+   font-size: 1em;
+   line-height: 1.6em;
+}
+
+.contactinfo input, #stay-nights, textarea {
+   border: 1px solid #ccc;
+   padding: 0.2em;
+   font-size: 1em;
+}
+.contactinfo label {
+   display:block;
+   position:relative;
+   margin: 0.8em 0;
+}
+
+select {
+   margin-bottom: 0.6em;
+}
+#nameinput, #emailinput {
+   width: 25em;
+}
+#phoneinput {
+   width: 12em;
+}
+#start-sit {
+   width: 3em;
+}
+/*Submit button styles */
+#submit {
+   border: none;
+   padding: 0.4em 0.6em;
+   background-color: #e3d5ba;
+   font-size: 1.25em;
+   border-radius: 10px;
+}
+
+
+
+/* Footer */
+footer {
+   padding: 0.6em;
+   background-color: #34180f;
+   color: ivory;
+   text-align: center;
+   clear: both;
+}
+
+
+/* Visual polish */
+article, aside {
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   border-radius: 8px;
+}
+
+article {
+   margin-top: 1.5em;
+}
+
+/* Center main content when no aside is present */
+article {
+   float: none;
+   margin: 2em auto;
+}
+
+/* Restore two-column layout only on standings page */
+.standings-page article {
+   float: left;
+   width: 62%;
+   margin: 0;
+}
+
+
+aside {
+   margin-top: 1.5em;
+}
+
+
+/* Hide aside by default */
+aside {
+   display: none;
+}
+
+/* Show aside only on standings page */
+.standings-page aside {
+   display: block;
+}
+
+
+/* Print Styles */
+@media print {
+   body, h1, article, footer {
+      color: rgb(0,0,0);
+      background: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 0.75in;
+}

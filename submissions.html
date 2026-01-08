@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Submission Requests Page</title>
+      <!-- 
+      	 Name: Jordan Pangrazzi
+      	 Date: 12/18/25
+      	 Description: Allows users to submission start/sit decision requests based upon their inputted league settings.
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link rel="stylesheet" href="styles.css">
+      <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+      <header>
+         <h1><a href="index.html"><img src="images/banner.jpg" width="600" height="300" alt="War Room League"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="standings.html">Standings</a></li>
+            <li><a href="submissions.html">Submissions</a></li>
+         </ul>
+      </nav>
+      <article id="contentstart">
+         <div class="containersub">
+            <h2>Start/Sit Submission</h2>
+            <form action="results.html"> 
+            	<fieldset class="contactinfo">
+            		<legend>Contact Information</legend> 
+            		<label for ="nameinput">
+            			Name
+            			<input type="text" name="name" id="nameinput" placeholder="First and Last Initial">
+            		</label>
+            		<label for ="emailinput">
+            			Email
+            			<input type="text" name="email" id="emailinput" placeholder="youremail@gmail.com">
+            		</label>
+            		<label for ="phoneinput">
+            			Phone
+            			<input type="tel" name="Phone" id="phoneinput" placeholder="702-275-4444">
+            		</label>
+            	</fieldset>
+            	
+            	
+            	<fieldset class="league info">
+  					<legend>League Information</legend>
+  				<fieldset class="roster">
+    				<legend>League Details</legend>
+
+      			<div class="picker">
+        			<label for="teams">Teams</label>
+        			<select id="teams" name="teams">   
+          				<option value="10">8</option>  	
+          				<option value="12">10</option>  
+          				<option value="12">12</option>  	
+          				<option value="14">14</option>  					
+        				</select>
+      					</div> 					
+            				
+            				
+            			<label for ="requests">
+            				Number of Start/Sit Requests
+            				<input type="number" name="requests" id="start-sit">
+            			</label>
+            		</fieldset>
+            		
+            		<fieldset class="socialmedia">
+            			<legend>Social Media That you follow us on</legend>
+            			<label for="youtube">
+            				<input type="checkbox" id="YT" value="Youtube" name="youtube">
+            				Youtube
+            			</label>
+            			<label for="instagram">
+            				<input type="checkbox" id="insta" value="Instagram" name="insta">
+            				Instagram
+            			</label>
+            			<label for="both">
+            				<input type="checkbox" id="Bth" value="Both" name="both">
+            				Both
+            			</label>
+            		</fieldset>
+            		
+            		
+            		<fieldset class="situationinfo">
+            			<legend>Your situation this week</legend>
+            			<label for="favored">
+            				<input type="radio" name="situation" id="favored" value="Favored" checked> 
+            				Favored
+            			</label>
+            			<label for="underdog">
+            				<input type="radio" name="situation" id="underdog" value="Underdog"> 
+            				Underdog
+            			</label>
+            			<label for="even">
+            				<input type="radio" name="situation" id="even" value="Even"> 
+            				Even
+            			</label>
+            		</fieldset>
+            	</fieldset>
+            	
+            		
+            		
+            	<fieldset class="additionalinfo">
+            		<legend>Request Information</legend>
+            		<label for ="feedback">
+            		Provide your start/sit request details here, along with all information
+            			<textarea name="feedback" id="feedback" rows="4" cols="55">
+            			</textarea>
+            		</label>
+            	</fieldset>
+            	<fieldset class="submitbutton">
+            		<input type="submit" id="submit" value="submit">
+            	</fieldset>
+         </div>
+      </article>
+       <aside>
+        <p>What should I submit?</p>
+         <ol class="custom-markers">
+           <li>Start/Sit Decisions
+           <li>Waiver Inquiries
+           <li>Roster Analysis
+          </ol> 
+      </aside>
+      <footer>
+        <p>Jordan Pangrazzi &bull; Portfolio Website &bull; HTML &amp; CSS &bull; Winter 2025</p>
+      </footer>
+   </body>
+</html>
